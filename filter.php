@@ -1,3 +1,4 @@
+
 <form action="" method="GET">
     <div id="filter" class="row align-items-center">
         <div class="col-12 col-md-2">
@@ -6,7 +7,7 @@
                 <?php
                 foreach (Bonnet::TAILLE as $value) {
                     ?>
-                <option value="<?= $value ?>" ><?php echo $value; ?></option>
+                <option value="<?= $value ?>" <?php echo $size == $value ? 'selected' : ''; ?>><?php echo $value; ?></option>
                 <?php
                 } ?>
             </select>
@@ -19,7 +20,7 @@
                     <?php
                     foreach (Bonnet::MATIERE as $value) {
                         ?>
-                    <option value="<?= $value ?>"><?php echo $value; ?></option>
+                    <option value="<?= $value ?>" <?php echo $material == $value ? 'selected' : ''; ?>><?php echo $value; ?></option>
                     <?php
                     } ?>
                 </select>
@@ -27,11 +28,11 @@
    
             <div class="col-12 col-md-3">
                 <label for="price-min">prix min</label>
-                <input type="number" id="price-min" name="price-min" min="0">
+                <input type="number" id="price-min" name="price-min" min="0" value="<?php echo $priceMin !== null ? $priceMin : ''; ?>">
             </div>
             <div class="col-12 col-md-3">
                 <label for="price-max">prix max</label>
-                <input type="number" id="price-max" name="price-max" min ="0">
+                <input type="number" id="price-max" name="price-max" min ="0" value="value="<?php echo $priceMax !== null ? $priceMax : ''; ?>">
             </div>
             <div class="col-6 col-md-2">
                     <button class="btn" type="submit">Rechercher</button>

@@ -10,6 +10,7 @@ $products = $myProducts;
 
 if (!empty($_GET['price-min'])) {
     $priceMin = $_GET['price-min'];
+    
 
     $products = array_filter($products, function (Bonnet $product) use ($priceMin) {
         return $product->hasMinPrice($priceMin);

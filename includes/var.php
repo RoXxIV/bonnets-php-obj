@@ -19,3 +19,8 @@
     $pass = 'toto';
     $panier = array();
     $regex = '/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/';
+
+    $priceMin = null;
+    $priceMax = null;
+    $size = null;
+    $material = null;
