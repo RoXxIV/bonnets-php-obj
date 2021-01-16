@@ -1,0 +1,57 @@
+/*-_-_-_-_-_-_-_-_-_-_POLICES-_-_-_-_-_-_-_-_-_-_*/
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+/*-_-_-_-_-_-_-_-_-_-_VARIABLES-_-_-_-_-_-_-_-_-_-_*/
+:root {
+  --rouge: #8c0b0a;
+  --bleu: #1b272c;
+}
+/*-_-_-_-_-_-_-_-_-_-_HEADER-_-_-_-_-_-_-_-_-_-_*/
+header {
+  background: var(--bleu);
+  font-size: 20px;
+}
+header a {
+  color: white;
+}
+header a:hover {
+  color: white;
+}
+#logo {
+  font-size: 40px;
+}
+#logo span {
+  color: var(--rouge);
+}
+
+.btn {
+  background: var(--bleu);
+  color: white;
+}
+/*-_-_-_-_-_-_-_-_-_-_FOOTER-_-_-_-_-_-_-_-_-_-_*/
+footer {
+  position: relative;
+  background: var(--bleu);
+  padding: 50px 0px;
+  margin-top: 150px;
+}
+footer ul {
+  position: absolute;
+  left: 10%;
+  top: 70%;
+  list-style: none;
+}
+footer a {
+  color: white;
+}
+/*-_-_-_-_-_-_-_-_-_-_INDEX-_-_-_-_-_-_-_-_-_-_*/
+#card {
+  margin-top: 50px;
+}
+/*-_-_-_-_-_-_-_-_-_-_Contact-_-_-_-_-_-_-_-_-_-_*/
+#contact {
+  margin-top: 50px;
+}
+/*-_-_-_-_-_-_-_-_-_-_FILTER-_-_-_-_-_-_-_-_-_-_*/
+#filter {
+  margin-top: 50px;
+}
